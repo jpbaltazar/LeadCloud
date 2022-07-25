@@ -26,12 +26,18 @@ The remote system is composed solely of the server and it is connected to a NoSQ
 
 To use LeadCloud you first need to register:
 
-
-
+\include[adddevice]
 
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
-   [dill]: <https://github.com/joemccann/dillinger>
-   [adddevice]: <./readme/adddevice.png>
-
+	[dill]: <https://github.com/joemccann/dillinger>
+	[adddevice]: <https://github.com/ZeD4805/LeadCloud/blob/30a6f01630c47534f1d189dbc73da724857bffe6/readme/adddevice.png>
+	[addedschedule]: <https://github.com/ZeD4805/LeadCloud/blob/30a6f01630c47534f1d189dbc73da724857bffe6/readme/addedschedule.png>
+	[assignschedule]: <https://github.com/ZeD4805/LeadCloud/blob/30a6f01630c47534f1d189dbc73da724857bffe6/readme/assignschedule.png>
+	[creatingschedule]: <https://github.com/ZeD4805/LeadCloud/blob/30a6f01630c47534f1d189dbc73da724857bffe6/readme/creatingschedule.png>
+	[deviceadded]: <https://github.com/ZeD4805/LeadCloud/blob/30a6f01630c47534f1d189dbc73da724857bffe6/readme/deviceadded.png>
+	[editingscheduleinfofields]: <https://github.com/ZeD4805/LeadCloud/blob/30a6f01630c47534f1d189dbc73da724857bffe6/readme/editingscheduleinfofields.png>
+	[loginregister]: <https://github.com/ZeD4805/LeadCloud/blob/30a6f01630c47534f1d189dbc73da724857bffe6/readme/loginregister.png>
+	[nodevices]: <https://github.com/ZeD4805/LeadCloud/blob/30a6f01630c47534f1d189dbc73da724857bffe6/readme/nodevices.png>
+	[scheduletoassign]: <https://github.com/ZeD4805/LeadCloud/blob/30a6f01630c47534f1d189dbc73da724857bffe6/readme/scheduletoassign.png>
