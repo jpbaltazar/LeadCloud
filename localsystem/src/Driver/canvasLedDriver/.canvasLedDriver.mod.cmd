@@ -1,0 +1,1 @@
+cmd_/home/zed4805/CLionProjects/LeadCloudDDriver/Driver/canvasLedDriver/canvasLedDriver.mod := { echo  /home/zed4805/CLionProjects/LeadCloudDDriver/Driver/canvasLedDriver/canvasLedDriver.o;  echo; } > /home/zed4805/CLionProjects/LeadCloudDDriver/Driver/canvasLedDriver/canvasLedDriver.mod

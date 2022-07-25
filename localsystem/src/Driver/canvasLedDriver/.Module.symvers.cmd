@@ -1,0 +1,1 @@
+cmd_/home/zed4805/CLionProjects/LeadCloudDDriver/Driver/canvasLedDriver/Module.symvers := sed 's/ko$$/o/' /home/zed4805/CLionProjects/LeadCloudDDriver/Driver/canvasLedDriver/modules.order | scripts/mod/modpost -m -a   -o /home/zed4805/CLionProjects/LeadCloudDDriver/Driver/canvasLedDriver/Module.symvers -e -i Module.symvers   -T -

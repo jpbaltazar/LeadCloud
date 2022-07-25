@@ -1,0 +1,45 @@
+{
+  "header": {
+    "title": "sched",
+    "description": "TEST2",
+    "scheduleType": 2
+  },
+  "entries": [
+    {
+      "entryType": 1,
+      "id": 1,
+      "name": "",
+      "duration": 0,
+      "args": null,
+      "time": 3600
+    },
+    {
+      "entryType": 2,
+      "id": 1,
+      "name": "",
+      "duration": 10,
+      "args": [
+        "scrollText",
+        "Hello world ",
+        "0xFF00FF"
+      ],
+      "time": 0
+    },
+    {
+      "entryType": 1,
+      "id": 1,
+      "name": "",
+      "duration": 0,
+      "args": null,
+      "time": 601200
+    },
+    {
+      "entryType": 3,
+      "id": 1,
+      "name": "",
+      "duration": 0,
+      "args": null,
+      "time": 0
+    }
+  ]
+}
