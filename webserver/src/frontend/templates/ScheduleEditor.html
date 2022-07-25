@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Schedule Editor</title>
+    <script src = "../js/p5.js"></script>
+
+</head>
+<style>
+    html, body {
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        background:#1C1C4D;
+        scroll-behavior: smooth;
+
+    }
+    label, h1, p {
+        color: white;
+    }
+    div{
+        width: 60%;
+        margin: 0 auto;
+    }
+    table{
+        padding-left: 10px;
+    }
+</style>
+<body>
+
+<h1>Editing: {{.Name}}</h1>
+
+<!--contains all the necessary info-->
+<input id="username" type="hidden" value="{{.Owner}}">
+<input id="scheduleId" type="hidden" value="{{.ID}}">
+<input id="scheduleJSON" type="hidden" value='{{.JsonSchedule}}'>
+<!--Buttons to control event creation-->
+<form id="editorForm" action="">
+    <table>
+        <tr>
+            <td>
+                <input value="Back to schedules" type="submit" formaction="/schedulePage">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input id="scheduleFieldsToggle" type="button" value="Show schedule fields" onclick="HideShowScheduleFields()">
+            </td>
+            <td></td>
+        </tr>
+        <tr id="scheduleTitleRow" style="display:none;">
+            <td>
+                <label>Schedule Title</label>
+            </td>
+            <td>
+                <input type="text" id="scheduleTitle" value="title">
+            </td>
+        </tr>
+        <tr id="scheduleDescriptionRow"  style="display:none;">
+            <td>
+                <label>Schedule Description</label>
+            </td>
+            <td>
+                <textarea name="scheduleDescription" id="scheduleDescription"  rows="8" cols="100"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input id="saveSchedule" type="button" value="Save Schedule" onclick="SaveScheduleButton()">
+            </td>
+        </tr>
+    </table>
+
+    <table id="eventEditorTable">
+        <tr> <!--Name, startTime, endTime, duration, program, args-->
+            <td>
+                <label>Event name</label>
+            </td>
+            <td>
+                <input id="eventName" type="text" name="eventName" placeholder="event1">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="startWeekday">Start Time</label>
+            </td>
+            <td>
+                <input id="startTime" type="time" name="startTime" step="1">
+            </td>
+            <td>
+                <select name="startWeekday" id="startWeekday">
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                    <option value="Sunday">Sunday</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="stopWeekday">Stop Time</label>
+            </td>
+            <td>
+                <input id="stopTime" type="time" name="stopTime" step="1">
+            </td>
+            <td>
+                <select name="stopWeekday" id="stopWeekday">
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                    <option value="Sunday">Sunday</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Duration</label>
+            </td>
+            <td>
+                <input id="duration" type="text" name="duration" placeholder="5">
+            </td>
+            <td>
+                <p>in sec</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label>Program</label>
+            </td>
+            <td>
+                <input id="progName" type="text" name="progName" placeholder="pong">
+            </td>
+        </tr>
+        <tr id="argRow">
+            <td>
+                <label>Arguments</label>
+            </td>
+            <td>
+                <input id="extraArgs" type="text" name="extraArgs" placeholder='"arg1", "arg2"...'>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input id="addEditEvent" type="button" value="Add event" onclick="AddEditButton()">
+            </td>
+            <td>
+                <input id="removeEvent" type="button" value="Remove event" onclick="RemoveButton()">
+            </td>
+        </tr>
+    </table>
+</form>
+<label>Selected</label>
+<label id="selectedName"></label>
+<br>
+<br>
+<div>
+    <script src = "../js/CalendarEditor.js"></script>
+</div>
+<!--Data for the calendar here? ^  -->
+
+</body>
+</html>

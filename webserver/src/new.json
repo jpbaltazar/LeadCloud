@@ -1,0 +1,62 @@
+{
+  "header" : {
+    "title" : "Demo",
+    "description" : "This is a demonstration schedule, it scrolls the words \"Display this text\" for 5 seconds, plays pong for 5 seconds and displays the \"Lead Cloud\" logo for 10 seconds.",
+    "scheduleType" : 2
+  },
+
+  "entries" : [
+    {
+      "entryType" : 1,
+      "time" : 1
+    },
+
+    {
+      "entryType" : 2,
+      "id" : 1,
+      "duration" : 10,
+      "args" : [
+        "scrollText",
+        "This text comes from the arguments "
+      ]
+    },
+
+    {
+      "entryType" : 2,
+      "id" : 2,
+      "duration" : 5,
+      "args" : [
+        "pong"
+      ]
+    },
+
+    {
+      "entryType" : 2,
+      "id" : 3,
+      "duration" : 10,
+      "args" : [
+        "baseJob"
+      ]
+    },
+
+    {
+      "entryType" : 1,
+      "time" : 4000000
+    },
+
+    {
+      "entryType" : 3,
+      "id" : 1
+    },
+
+    {
+      "entryType" : 3,
+      "id" : 2
+    },
+
+    {
+      "entryType" : 3,
+      "id" : 3
+    }
+  ]
+}

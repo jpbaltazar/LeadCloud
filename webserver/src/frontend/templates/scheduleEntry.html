@@ -1,0 +1,28 @@
+<tr>
+  <td>
+    <h3>
+      {{.Name}}
+    </h3>
+  </td>
+  <td>
+    {{printf "%s" .Type}}
+  </td>
+  <td>
+    {{.Description}}
+  </td>
+  <td>
+    <form>
+      <input value="Edit schedule"
+             type="submit"
+             formaction="/editSchedule/{{.ID}}">
+    </form>
+  </td>
+  <td>
+    <form>
+      <input value="Remove schedule"
+              type="submit"
+              formaction="/removeSchedule/{{.ID}}">
+    </form>
+  </td>
+</tr>
+

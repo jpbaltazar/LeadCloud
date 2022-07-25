@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add schedule</title>
+</head>
+<style>
+    h1 {
+        color: white;
+    }
+    body {
+        color: white;
+        background-color: #1C1C4D;
+    }
+    th {
+        border-right: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+    th, td {
+        padding: 0 15px;
+    }
+    .formStyle {
+        border: 1px solid white;
+        border-collapse: collapse;
+    }
+</style>
+<body>
+    <h1>Add a Schedule</h1>
+
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <label>Name of schedule</label>
+                </td>
+                <td>
+                    <input type="text" name="eventName" placeholder="schedule name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="scheduleFreq">Schedule frequency</label>
+                </td>
+                <td>
+                    <select name="scheduleFreq" id="scheduleFreq">
+                      <option value="daily">Daily</option>
+                      <option value="weekly">Weekly</option>
+                      <option value="monthly">Monthly</option>
+                      <option value="yearly">Yearly</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="scheduleDesc">Schedule description</label>
+                </td>
+                <td>
+                    <textarea name="scheduleDesc" id="scheduleDesc" rows="8" cols="100"></textarea>
+                </td>
+            </tr>
+            <tr>
+              <td>
+                <input value="Create schedule" type="submit" formaction="/addSchedule">
+              </td>
+            </tr>
+        </table>
+    </form>
+    <br>
+    <br>
+    <table class="formStyle">
+        <tr>
+            <th>
+                Schedule name
+            </th>
+            <th>
+                Schedule type
+            </th>
+            <th>
+                Schedule description
+            </th>
+            <th>
+                Edit
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <h3>
+                    Demo
+                </h3>
+            </td>
+            <td>
+                Weekly
+            </td>
+            <td>
+                A small demonstration that displays a pong game, displays some text and displays the logo
+            </td>
+            <td>
+                <form>
+                    <input value="Edit schedule" type="submit" formaction="/editSchedule">
+                </form>
+            </td>
+        </tr>
+
+    </table>
+</body>
+</html>

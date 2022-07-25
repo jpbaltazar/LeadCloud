@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  h1 {
+    color: white;
+  }
+  body {
+    color: white;
+    background-color: #1C1C4D;
+  }
+
+  table, th, td {
+    border:1px solid white;
+    background-color: #1C1C4D;
+  }
+  td {
+    text-align: center;
+  }
+  th {
+    background-color: midnightblue;
+  }
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
+<head>
+  <meta charset="UTF-8">
+  <title>Devices</title>
+</head>
+<body>
+<h1>Devices</h1>
+<form>
+  <input value="Go to Schedules" type="submit" formaction="/schedulePage">
+</form>
+<div class="center">
+  <table id="deviceTable" class="center" style="width:75%">
+    <tr>
+      <th>Device name</th>
+      <th>Status</th>
+      <th>Configuration</th>
+      <th>Location</th>
+      <th>Currently displaying</th>
+      <th>Remove device</th>
+      <th>Assign schedule</th>
+    </tr>{{printf "%s" .}} <!--table insertions go here-->
+
+  </table>
+  <br>
+  <div style="text-align: center">
+    <form>
+      <input value="Add device" type="submit" formaction="/addDevicePage.html" style="width: 200px; height: 75px">
+    </form>
+  </div>
+</div>
+</body>
+</html>

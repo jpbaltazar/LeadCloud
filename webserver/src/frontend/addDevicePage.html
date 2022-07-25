@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add Device</title>
+</head>
+<style>
+    h1 {
+        color: white;
+    }
+    body {
+        color: white;
+        background-color: #1C1C4D;
+    }
+</style>
+<body>
+<h1>New device details:</h1>
+The configuration key is the 6 character string showing in the device.<br><br>
+<form>
+    <table>
+        <tr>
+            <td style="padding-bottom: 1em">
+                <label>Configuration key </label>
+            </td>
+            <td style="padding-bottom: 1em">
+                <input type="text" name="configKey" placeholder="AAAAAA">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Device Name </label>
+            </td>
+            <td>
+                <input type="text" name="deviceName" placeholder="RPI0">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Configs </label>
+            </td>
+            <td>
+                <input type="text" name="configs" value="32x64">
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-bottom: 1em">
+                <label>Location </label>
+            </td>
+            <td style="padding-bottom: 1em">
+                <input type="text" name="location" placeholder="somewhere">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input value="Add device" type="submit" formaction="/addDevice">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

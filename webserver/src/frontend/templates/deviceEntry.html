@@ -1,0 +1,31 @@
+<tr>
+    <td>{{.Name}}</td>
+    <td>{{.Status}}</td>
+    <td>{{.Configuration}}</td>
+    <td>{{.Location}}</td>
+    <td width=1%>
+        <iframe
+                id="drawMatrixFrame"
+                src="./js/drawMatrixFrame.html"
+                style="height: 384px; width: 768px; background-color: #1C1C4D"
+                mheight="{{.Matrix.MHeight}}"
+                mwidth="{{.Matrix.MWidth}}"
+                scale="{{.Matrix.Scale}}"
+                matrix="{{.Matrix.Matrix}}"
+        ></iframe>
+    </td>
+    <td>
+        <form>
+            <input type="submit"
+                   value="Remove Device"
+                   formaction="/removeDevice/{{.ID}}">
+        </form>
+    </td>
+    <td>
+        <form>
+            <input type="submit"
+                    value="Assign schedule"
+                    formaction="/assignScheduleList/{{.ID}}">
+        </form>
+    </td>
+</tr>
