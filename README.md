@@ -26,7 +26,7 @@ The remote system is composed solely of the server and it is connected to a NoSQ
 
 To use LeadCloud you first need to register:
 
-\include[adddevice]
+![login or register]([loginregister])
 
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
